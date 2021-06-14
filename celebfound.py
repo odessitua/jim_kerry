@@ -110,7 +110,7 @@ class CelebFound(object):
       print("Frame:",i,'/',length,'. Found celeb:',len(self.frameIds))
       if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-    np.save(pathToIds,np.array(idsKerry))  
+    np.save(self.pathToIds,np.array(self.frameIds))
     cap.release()
     cv2.destroyAllWindows()
 
